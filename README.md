@@ -7,4 +7,4 @@ StartupScripts
 
 2) mongo.sh - extracting keys and installing mongodb
 
-3)ginit.sh - initializing gcloud host  
+3) ginit.sh - initializing gcloud host  
