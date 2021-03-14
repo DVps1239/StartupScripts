@@ -70,3 +70,7 @@ puma -d
 ps aux | grep puma
 
 
+echo 'Done'
+
+sudo shutdown -r now;
+exit;
