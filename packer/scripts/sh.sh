@@ -16,9 +16,6 @@ gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703
 \curl -sSL https://rvm.io/mpapis.asc | gpg2 --import -
 
 
-\curl -sSL https://rvm.io/pkuczynski.asc | gpg2 --import -
-
-
 \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 \curl -sSL https://get.rvm.io | bash -s stable --rails
@@ -26,8 +23,8 @@ gpg --keyserver hkp://pool.sks-keyservers.net --recv-keys 409B6B1796C275462A1703
 
 . ~/.rvm/scripts/rvm
 
-rvm install 2.4.1
-rvm use 2.4.1 --default
+rvm install 3.0.0
+rvm use 3.0.0 --default
 gem install bundler
 ruby -v
 bundle -v

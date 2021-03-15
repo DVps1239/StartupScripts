@@ -4,7 +4,7 @@
     "type": "googlecompute",
     "project_id": "week-4-307621",
     "image_name": "reddit-base-{{timestamp}}",
-    "source_image": "ubuntu-1604-xenial-v20210224",
+    "source_image": "debian-10-buster-v20210217",
     "zone": "europe-west1-b",
     "ssh_username": "devops",
     "machine_type": "f1-micro"
