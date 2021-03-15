@@ -1,0 +1,24 @@
+{
+   "builders": [
+      {
+    "type": "googlecompute",
+    "project_id": "week-4-307621",
+    "image_name": "reddit-base-{{timestamp}}",
+    "source_image": "debian-10-buster-v20210217",
+    "zone": "europe-west1-b",
+    "ssh_username": "devops",
+    "machine_type": "f1-micro"
+    }
+],
+   "provisioners": [
+      {
+        "type": "shell",
+        "script": "scripts/sh.sh"
+      },
+       {
+        "type": "shell",
+        "script": "scripts/mongo.sh",
+        "execute_command": "sudo {{.Path}}"
+      }
+    ]
+}
