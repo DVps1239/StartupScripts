@@ -19,6 +19,14 @@
         "type": "shell",
         "script": "scripts/mongo.sh",
         "execute_command": "sudo {{.Path}}"
+      },
+       {
+        "type": "shell",
+        "script": "scripts/deploy.sh"
       }
-    ]
+    ],
+       {
+        "type": "shell",
+        "script": ""
+      }
 }
